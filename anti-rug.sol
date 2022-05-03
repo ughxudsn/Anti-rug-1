@@ -107,7 +107,7 @@ contract NFT is ERC721Enumerable, Ownable {
             number++;
 
           }
-        votecount += votecount;
+        votecount += number;
         return votecount;
 
     }
