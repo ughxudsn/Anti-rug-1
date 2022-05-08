@@ -97,7 +97,7 @@ contract NFT is ERC721Enumerable, Ownable {
    
     
 
-    function vote() onlyTokenholders public returns (uint256 _votecount) {
+    function vote() onlyTokenholders public returns (uint256) {
         uint count = balanceOf(msg.sender);
         uint256 number;
         for(uint i=0; i < count; i++){
